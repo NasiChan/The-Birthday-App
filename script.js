@@ -65,10 +65,18 @@ function transitionToSlideshow() {
 }
 
 // Slideshow functionality
+let slideshowInterval;
+
 function startSlideshow() {
     // Auto-advance slides every 4 seconds
-    setInterval(() => {
-        changeSlide(1);
+    slideshowInterval = setInterval(() => {
+        const slides = document.querySelectorAll('.slide');
+        // Stop auto-advance when reaching the final slide
+        if (currentSlideIndex < slides.length - 1) {
+            changeSlide(1);
+        } else {
+            clearInterval(slideshowInterval);
+        }
     }, 4000);
 }
 
@@ -92,6 +100,11 @@ function changeSlide(direction) {
     // Add active class to new slide and dot
     slides[currentSlideIndex].classList.add('active');
     dots[currentSlideIndex].classList.add('active');
+    
+    // Stop auto-advance if we're at the final slide
+    if (currentSlideIndex === slides.length - 1) {
+        clearInterval(slideshowInterval);
+    }
 }
 
 function currentSlide(slideIndex) {
