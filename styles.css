@@ -239,11 +239,18 @@ body {
 }
 
 .final-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px; 
+    padding: 40px;
     background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f, #4d9de0, #e15759);
     background-size: 300% 300%;
     animation: gradientShift 3s ease infinite, fadeIn 1s ease-in-out;
     border-radius: 15px;
-    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .final-message {
