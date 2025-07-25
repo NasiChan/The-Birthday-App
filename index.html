@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cake-page" class="page active">
+        <div class="cake-container">
+            <h1>Make a Wish!</h1>
+            <div class="cake">
+                <div class="cake-layer cake-bottom"></div>
+                <div class="cake-layer cake-middle"></div>
+                <div class="cake-layer cake-top"></div>
+                <div class="candles">
+                    <div class="candle" data-candle="1">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                    </div>
+                    <div class="candle" data-candle="2">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                    </div>
+                    <div class="candle" data-candle="3">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                    </div>
+                    <div class="candle" data-candle="4">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                    </div>
+                    <div class="candle" data-candle="5">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="instruction">Click on the candles to light them up!</p>
+        </div>
+    </div>
+
+    <div id="slideshow-page" class="page">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="https://via.placeholder.com/600x400/ff69b4/ffffff?text=Happy+Birthday!" alt="Birthday Image 1">
+                <div class="slide-text">
+                    <h2>Another Year of Amazing!</h2>
+                    <p>Celebrating all the wonderful memories we've shared together.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400/87ceeb/ffffff?text=Special+Moments" alt="Birthday Image 2">
+                <div class="slide-text">
+                    <h2>Cherished Moments</h2>
+                    <p>Every moment with you is a treasure worth celebrating.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400/98fb98/ffffff?text=Best+Wishes" alt="Birthday Image 3">
+                <div class="slide-text">
+                    <h2>Wishing You Joy</h2>
+                    <p>May this new year bring you endless happiness and beautiful surprises.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400/dda0dd/ffffff?text=Forever+Friends" alt="Birthday Image 4">
+                <div class="slide-text">
+                    <h2>Grateful for You</h2>
+                    <p>Thank you for being such an incredible person and friend.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-controls">
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+        <div class="slide-indicators">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
