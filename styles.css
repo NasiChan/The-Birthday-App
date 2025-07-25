@@ -37,7 +37,7 @@ body {
 .cake-container h1 {
     font-size: 3em;
     margin-bottom: 100px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cake {
@@ -55,7 +55,7 @@ body {
     width: 300px;
     height: 60px;
     background: linear-gradient(45deg, #8B4513, #A0522D);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cake-middle {
@@ -63,7 +63,7 @@ body {
     height: 50px;
     background: linear-gradient(45deg, #FF69B4, #FF1493);
     margin-top: -10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cake-top {
@@ -71,7 +71,7 @@ body {
     height: 40px;
     background: linear-gradient(45deg, #FFD700, #FFA500);
     margin-top: -10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .candles {
@@ -126,15 +126,20 @@ body {
 }
 
 @keyframes flicker {
-    0% { transform: translateX(-50%) scale(1) rotate(-1deg); }
-    100% { transform: translateX(-50%) scale(1.1) rotate(1deg); }
+    0% {
+        transform: translateX(-50%) scale(1) rotate(-1deg);
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1.1) rotate(1deg);
+    }
 }
 
 .instruction {
     font-size: 1.2em;
     margin-top: 30px;
     color: #FFD700;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .slideshow-container {
@@ -147,7 +152,7 @@ body {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
 
@@ -228,35 +233,34 @@ body {
 .dot {
     height: 15px;
     width: 15px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.dot.active, .dot:hover {
+.dot.active,
+.dot:hover {
     background-color: white;
 }
 
 .final-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 500px; 
-    padding: 40px;
     background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f, #4d9de0, #e15759);
     background-size: 300% 300%;
     animation: gradientShift 3s ease infinite, fadeIn 1s ease-in-out;
     border-radius: 15px;
-    box-sizing: border-box;
+    padding: 40px;
+}
+
+.final-slide h1 {
+    width: 100%;
     text-align: center;
 }
 
 .final-message {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .final-message h1 {
@@ -279,20 +283,46 @@ body {
 }
 
 @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
@@ -300,9 +330,17 @@ body {
         font-size: 2em;
     }
 
-    .cake-bottom { width: 250px; }
-    .cake-middle { width: 200px; }
-    .cake-top { width: 150px; }
+    .cake-bottom {
+        width: 250px;
+    }
+
+    .cake-middle {
+        width: 200px;
+    }
+
+    .cake-top {
+        width: 150px;
+    }
 
     .slideshow-container {
         max-width: 90%;
@@ -313,4 +351,3 @@ body {
         height: 250px;
     }
 }
-
