@@ -1,20 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <div id="cake-page" class="page active">
         <div class="cake-container">
             <h1>Make a Wish!</h1>
             <div class="cake">
-                <div class="cake-layer cake-bottom"></div>
-                <div class="cake-layer cake-middle"></div>
                 <div class="cake-layer cake-top"></div>
+                <div class="cake-layer cake-middle"></div>
+                <div class="cake-layer cake-bottom"></div>
+
                 <div class="candles">
                     <div class="candle" data-candle="1">
                         <div class="flame"></div>
@@ -45,46 +47,117 @@
     <div id="slideshow-page" class="page">
         <div class="slideshow-container">
             <div class="slide active">
-                <img src="https://via.placeholder.com/600x400/ff69b4/ffffff?text=Happy+Birthday!" alt="Birthday Image 1">
+                <img src="images/bbq.jpg" alt="Baba and BBQ" />
                 <div class="slide-text">
-                    <h2>Another Year of Amazing!</h2>
-                    <p>Celebrating all the wonderful memories we've shared together.</p>
+                    <h2>Grill Master Memories</h2>
+                    <p>Nothing brings the family together like your legendary BBQs. We love you for that!</p>
                 </div>
             </div>
+
             <div class="slide">
-                <img src="https://via.placeholder.com/600x400/87ceeb/ffffff?text=Special+Moments" alt="Birthday Image 2">
+                <img src="images/cake.jpg" alt="Baba with Cake" />
                 <div class="slide-text">
-                    <h2>Cherished Moments</h2>
-                    <p>Every moment with you is a treasure worth celebrating.</p>
+                    <h2>A Slice of Sweetness</h2>
+                    <p>You make life as sweet as the cakes we celebrate with. Here's to many more birthdays!</p>
                 </div>
             </div>
+
             <div class="slide">
-                <img src="https://via.placeholder.com/600x400/98fb98/ffffff?text=Best+Wishes" alt="Birthday Image 3">
+                <img src="images/chilling.jpg" alt="Baba Chilling" />
                 <div class="slide-text">
-                    <h2>Wishing You Joy</h2>
-                    <p>May this new year bring you endless happiness and beautiful surprises.</p>
+                    <h2>Relax Like a King</h2>
+                    <p>Your calm energy grounds us all. Never change, chill master.</p>
                 </div>
             </div>
+
             <div class="slide">
-                <img src="https://via.placeholder.com/600x400/dda0dd/ffffff?text=Forever+Friends" alt="Birthday Image 4">
+                <img src="images/javoon.JPG" alt="Baba when young" />
                 <div class="slide-text">
-                    <h2>Grateful for You</h2>
-                    <p>Thank you for being such an incredible person and friend.</p>
+                    <h2>Timeless Soul</h2>
+                    <p>Even back then, your spirit was strong and full of light. That shine never faded.</p>
                 </div>
             </div>
-        </div>
+
+            <div class="slide">
+                <img src="images/kabab.jpg" alt="Baba with some kabab" />
+                <div class="slide-text">
+                    <h2>Kabab King</h2>
+                    <p>Flames, spices, and that special touch—no one does kabab like you!</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/sahari.jpg" alt="Baba enjoying Sahari" />
+                <div class="slide-text">
+                    <h2>Sahari Moments</h2>
+                    <p>Your dedication during Ramadan inspires us. You lead with quiet strength and grace.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/sawg.jpg" alt="Baba being too cool" />
+                <div class="slide-text">
+                    <h2>Effortless Swag</h2>
+                    <p>Style, confidence, and that signature look—Baba, you’ve always had it.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/sigma.jpg" alt="Baba rocking that aura" />
+                <div class="slide-text">
+                    <h2>Sigma Vibes</h2>
+                    <p>Your wisdom and quiet power radiate from within. True alpha energy.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/withNastaran.jpg" alt="Baba with Nastaran" />
+                <div class="slide-text">
+                    <h2>Father & Daughter</h2>
+                    <p>Through every phase of life, you've stood beside me. I'm forever grateful for you, Baba.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/withYasi.JPG" alt="Baba with Yasi" />
+                <div class="slide-text">
+                    <h2>Side by Side</h2>
+                    <p>Your love for Yasi shines through. These bonds mean the world to us.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/withMom.jpg" alt="Baba with Mom" />
+                <div class="slide-text">
+                    <h2>Partners in Life</h2>
+                    <p>Thank you for loving Mom the way you do. You're the heart of our home.</p>
+                </div>
+            </div>
+
         <div class="slide-controls">
             <button class="prev" onclick="changeSlide(-1)">❮</button>
             <button class="next" onclick="changeSlide(1)">❯</button>
         </div>
+
         <div class="slide-indicators">
             <span class="dot active" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
         </div>
     </div>
+        </div>
+
+        
 
     <script src="script.js"></script>
 </body>
+
 </html>
